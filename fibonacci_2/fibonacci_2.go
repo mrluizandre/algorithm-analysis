@@ -19,6 +19,7 @@ func fibonacci(n uint64) uint64 {
 	}
 
 	if n < 2 {
+		table[n] = n
 		return n
 	} else {
 		value := fibonacci(n-1) + fibonacci(n-2)
